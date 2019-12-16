@@ -6,7 +6,8 @@
         
 <title>RaiderIO Stats| zerodiv.github.io</title>
 <meta property="og:locale" content="en_US" />
-<link href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" rel="stylesheet"></link>
+<link href="https://thomasf.github.io/solarized-css/solarized-dark.min.css" rel="stylesheet"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
 <script src="https://wow.zamimg.com/widgets/power.js"></script>
 <style>
@@ -26,26 +27,96 @@ td, th {
     color: #000000;
 }
 </style>
+<script>
+
+function switchClass(className) {
+    $("#death_knight_blood").hide();
+    $("#death_knight_frost").hide();
+    $("#death_knight_unholy").hide();
+    $("#demon_hunter_havoc").hide();
+    $("#demon_hunter_vengeance").hide();
+    $(className).show();
+}
+</script>
+
 </head>
 <body>
 
 <div id="title">
   <h1>RaiderIO Stats</h1>
 </div>
-<table border="1" width="100%"><td><h4>Death Knight</h4></td></tr><td><ul><li><h5><a href="#death-knight_blood">blood</a></h5></li></ul></td></table><div id=<"%s_%s"><a name="death-knight_blood"><h3>Death Knight: blood</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>938 (3%)</td></tr><tr><td>5-9</td><td>2329 (9%)</td></tr><tr><td>10-14</td><td>4375 (17%)</td></tr><tr><td>15-19</td><td>13356 (54%)</td></tr><tr><td>20-24</td><td>3586 (14%)</td></tr><tr><td>25-29</td><td>137 (0%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>7002 (70%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>2998 (29%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters Surveyed:</h4><center><table border="1" width="100%"><tr><td class="goodTalent"><b>Heartbreaker</b></td><td class="goodTalent">5002       ( 71%)</td><td class="marginalTalent"><b>Blooddrinker</b></td><td class="marginalTalent">1944       ( 27%)</td><td class="badTalent"><b>Rune Strike</b></td><td class="badTalent">56         (  0%)</td></tr>
+<table border="1" width="100%">
+<td><h4>Death Knight</h4></td>
+<td><h4>Demon Hunter</h4></td>
+<td><h4>Druid</h4></td>
+</tr><td><ul><li><b><a href="#death_knight_blood" onClick="switchClass('#death_knight_blood'); return false;">blood</a></b></li><li><b><a href="#death_knight_frost" onClick="switchClass('#death_knight_frost'); return false;">frost</a></b></li><li><b><a href="#death_knight_unholy" onClick="switchClass('#death_knight_unholy'); return false;">unholy</a></b></li></ul></td>
+<td><ul><li><b><a href="#demon_hunter_havoc" onClick="switchClass('#demon_hunter_havoc'); return false;">havoc</a></b></li><li><b><a href="#demon_hunter_vengeance" onClick="switchClass('#demon_hunter_vengeance'); return false;">vengeance</a></b></li></ul></td>
+<td><ul><li><b><a href="#druid_balance" onClick="switchClass('#druid_balance'); return false;">balance</a></b></li></ul></td>
+</table>
+<div id="death_knight_blood">
+<a name="death_knight_blood"><h3>Death Knight: blood</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>938 (3%)</td></tr><tr><td>5-9</td><td>2329 (9%)</td></tr><tr><td>10-14</td><td>4375 (17%)</td></tr><tr><td>15-19</td><td>13356 (54%)</td></tr><tr><td>20-24</td><td>3586 (14%)</td></tr><tr><td>25-29</td><td>137 (0%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>7002 (70%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>2998 (29%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters surveyed:</h4><center><table border="1" width="100%"><tr><td class="goodTalent"><b>Heartbreaker</b></td><td class="goodTalent">5002       ( 71%)</td><td class="marginalTalent"><b>Blooddrinker</b></td><td class="marginalTalent">1944       ( 27%)</td><td class="badTalent"><b>Rune Strike</b></td><td class="badTalent">56         (  0%)</td></tr>
 <tr><td class="marginalTalent"><b>Rapid Decomposition</b></td><td class="marginalTalent">70         (  0%)</td><td class="goodTalent"><b>Hemostasis</b></td><td class="goodTalent">6892       ( 98%)</td><td class="badTalent"><b>Consumption</b></td><td class="badTalent">40         (  0%)</td></tr>
 <tr><td class="marginalTalent"><b>Foul Bulwark</b></td><td class="marginalTalent">269        (  3%)</td><td class="goodTalent"><b>Ossuary</b></td><td class="goodTalent">6657       ( 95%)</td><td class="badTalent"><b>Tombstone</b></td><td class="badTalent">76         (  1%)</td></tr>
 <tr><td class="goodTalent"><b>Will of the Necropolis</b></td><td class="goodTalent">6498       ( 92%)</td><td class="badTalent"><b>Anti-Magic Barrier</b></td><td class="badTalent">248        (  3%)</td><td class="marginalTalent"><b>Rune Tap</b></td><td class="marginalTalent">256        (  3%)</td></tr>
 <tr><td class="goodTalent"><b>Grip of the Dead</b></td><td class="goodTalent">5211       ( 74%)</td><td class="badTalent"><b>Tightening Grasp</b></td><td class="badTalent">512        (  7%)</td><td class="marginalTalent"><b>Wraith Walk</b></td><td class="marginalTalent">1279       ( 18%)</td></tr>
 <tr><td class="marginalTalent"><b>Voracious</b></td><td class="marginalTalent">98         (  1%)</td><td class="goodTalent"><b>Bloodworms</b></td><td class="goodTalent">6900       ( 98%)</td><td class="badTalent"><b>Mark of Blood</b></td><td class="badTalent">4          (  0%)</td></tr>
 <tr><td class="badTalent"><b>Purgatory</b></td><td class="badTalent">588        (  8%)</td><td class="marginalTalent"><b>Red Thirst</b></td><td class="marginalTalent">1276       ( 18%)</td><td class="goodTalent"><b>Bonestorm</b></td><td class="goodTalent">5138       ( 73%)</td></tr>
-</table></center></div>        <div id="footer">
+</table></center></div>
+<div id="death_knight_frost">
+<a name="death_knight_frost"><h3>Death Knight: frost</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>837 (5%)</td></tr><tr><td>5-9</td><td>2005 (14%)</td></tr><tr><td>10-14</td><td>3100 (21%)</td></tr><tr><td>15-19</td><td>7228 (51%)</td></tr><tr><td>20-24</td><td>961 (6%)</td></tr><tr><td>25-29</td><td>7 (0%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>6490 (64%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>3510 (35%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters surveyed:</h4><center><table border="1" width="100%"><tr><td class="marginalTalent"><b>Inexorable Assault</b></td><td class="marginalTalent">1408       ( 21%)</td><td class="badTalent"><b>Icy Talons</b></td><td class="badTalent">419        (  6%)</td><td class="goodTalent"><b>Cold Heart</b></td><td class="goodTalent">4663       ( 71%)</td></tr>
+<tr><td class="goodTalent"><b>Runic Attenuation</b></td><td class="goodTalent">5466       ( 84%)</td><td class="marginalTalent"><b>Murderous Efficiency</b></td><td class="marginalTalent">731        ( 11%)</td><td class="badTalent"><b>Horn of Winter</b></td><td class="badTalent">293        (  4%)</td></tr>
+<tr><td class="marginalTalent"><b>Death's Reach</b></td><td class="marginalTalent">826        ( 12%)</td><td class="goodTalent"><b>Asphyxiate</b></td><td class="goodTalent">5014       ( 77%)</td><td class="badTalent"><b>Blinding Sleet</b></td><td class="badTalent">650        ( 10%)</td></tr>
+<tr><td class="badTalent"><b>Avalanche</b></td><td class="badTalent">508        (  7%)</td><td class="goodTalent"><b>Frozen Pulse</b></td><td class="goodTalent">3771       ( 58%)</td><td class="marginalTalent"><b>Frostscythe</b></td><td class="marginalTalent">2211       ( 34%)</td></tr>
+<tr><td class="marginalTalent"><b>Permafrost</b></td><td class="marginalTalent">2076       ( 31%)</td><td class="goodTalent"><b>Wraith Walk</b></td><td class="goodTalent">2498       ( 38%)</td><td class="badTalent"><b>Death Pact</b></td><td class="badTalent">1916       ( 29%)</td></tr>
+<tr><td class="goodTalent"><b>Gathering Storm</b></td><td class="goodTalent">4411       ( 67%)</td><td class="badTalent"><b>Glacial Advance</b></td><td class="badTalent">47         (  0%)</td><td class="marginalTalent"><b>Frostwyrm's Fury</b></td><td class="marginalTalent">2032       ( 31%)</td></tr>
+<tr><td class="marginalTalent"><b>Icecap</b></td><td class="marginalTalent">1405       ( 21%)</td><td class="badTalent"><b>Obliteration</b></td><td class="badTalent">461        (  7%)</td><td class="goodTalent"><b>Breath of Sindragosa</b></td><td class="goodTalent">4624       ( 71%)</td></tr>
+</table></center></div>
+<div id="death_knight_unholy">
+<a name="death_knight_unholy"><h3>Death Knight: unholy</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>438 (5%)</td></tr><tr><td>5-9</td><td>1020 (13%)</td></tr><tr><td>10-14</td><td>1771 (24%)</td></tr><tr><td>15-19</td><td>3820 (51%)</td></tr><tr><td>20-24</td><td>313 (4%)</td></tr><tr><td>25-29</td><td>0 (0%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>7473 (74%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>2527 (25%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters surveyed:</h4><center><table border="1" width="100%"><tr><td class="goodTalent"><b>Infected Claws</b></td><td class="goodTalent">3644       ( 48%)</td><td class="marginalTalent"><b>All Will Serve</b></td><td class="marginalTalent">3288       ( 43%)</td><td class="badTalent"><b>Clawing Shadows</b></td><td class="badTalent">541        (  7%)</td></tr>
+<tr><td class="marginalTalent"><b>Bursting Sores</b></td><td class="marginalTalent">3091       ( 41%)</td><td class="goodTalent"><b>Ebon Fever</b></td><td class="goodTalent">4368       ( 58%)</td><td class="badTalent"><b>Unholy Blight</b></td><td class="badTalent">14         (  0%)</td></tr>
+<tr><td class="marginalTalent"><b>Grip of the Dead</b></td><td class="marginalTalent">1253       ( 16%)</td><td class="badTalent"><b>Death's Reach</b></td><td class="badTalent">388        (  5%)</td><td class="goodTalent"><b>Asphyxiate</b></td><td class="goodTalent">5832       ( 78%)</td></tr>
+<tr><td class="marginalTalent"><b>Pestilent Pustules</b></td><td class="marginalTalent">833        ( 11%)</td><td class="badTalent"><b>Harbinger of Doom</b></td><td class="badTalent">95         (  1%)</td><td class="goodTalent"><b>Soul Reaper</b></td><td class="goodTalent">6545       ( 87%)</td></tr>
+<tr><td class="badTalent"><b>Spell Eater</b></td><td class="badTalent">2377       ( 31%)</td><td class="marginalTalent"><b>Wraith Walk</b></td><td class="marginalTalent">2470       ( 33%)</td><td class="goodTalent"><b>Death Pact</b></td><td class="goodTalent">2626       ( 35%)</td></tr>
+<tr><td class="marginalTalent"><b>Pestilence</b></td><td class="marginalTalent">952        ( 12%)</td><td class="badTalent"><b>Defile</b></td><td class="badTalent">170        (  2%)</td><td class="goodTalent"><b>Epidemic</b></td><td class="goodTalent">6351       ( 84%)</td></tr>
+<tr><td class="marginalTalent"><b>Army of the Damned</b></td><td class="marginalTalent">168        (  2%)</td><td class="goodTalent"><b>Unholy Frenzy</b></td><td class="goodTalent">7263       ( 97%)</td><td class="badTalent"><b>Summon Gargoyle</b></td><td class="badTalent">42         (  0%)</td></tr>
+</table></center></div>
+<div id="demon_hunter_havoc">
+<a name="demon_hunter_havoc"><h3>Demon Hunter: havoc</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>910 (3%)</td></tr><tr><td>5-9</td><td>2130 (8%)</td></tr><tr><td>10-14</td><td>4007 (16%)</td></tr><tr><td>15-19</td><td>14018 (57%)</td></tr><tr><td>20-24</td><td>3132 (12%)</td></tr><tr><td>25-29</td><td>76 (0%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>9083 (90%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>917 (9%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters surveyed:</h4><center><table border="1" width="100%"><tr><td class="marginalTalent"><b>Blind Fury</b></td><td class="marginalTalent">3110       ( 34%)</td><td class="goodTalent"><b>Demonic Appetite</b></td><td class="goodTalent">4916       ( 54%)</td><td class="badTalent"><b>Fellblade</b></td><td class="badTalent">1057       ( 11%)</td></tr>
+<tr><td class="badTalent"><b>Insatiable Hunger</b></td><td class="badTalent">19         (  0%)</td><td class="marginalTalent"><b>Demon Blades</b></td><td class="marginalTalent">1003       ( 11%)</td><td class="goodTalent"><b>Immolation Aura</b></td><td class="goodTalent">8061       ( 88%)</td></tr>
+<tr><td class="goodTalent"><b>Trail of Ruin</b></td><td class="goodTalent">8526       ( 93%)</td><td class="badTalent"><b>Fel Mastery</b></td><td class="badTalent">2          (  0%)</td><td class="marginalTalent"><b>Fel Barrage</b></td><td class="marginalTalent">555        (  6%)</td></tr>
+<tr><td class="goodTalent"><b>Soul Rending</b></td><td class="goodTalent">5549       ( 61%)</td><td class="badTalent"><b>Desperate Instincts</b></td><td class="badTalent">216        (  2%)</td><td class="marginalTalent"><b>Netherwalk</b></td><td class="marginalTalent">3318       ( 36%)</td></tr>
+<tr><td class="marginalTalent"><b>Cycle of Hatred</b></td><td class="marginalTalent">17         (  0%)</td><td class="goodTalent"><b>First Blood</b></td><td class="goodTalent">9061       ( 99%)</td><td class="badTalent"><b>Dark Slash</b></td><td class="badTalent">5          (  0%)</td></tr>
+<tr><td class="goodTalent"><b>Unleashed Power</b></td><td class="goodTalent">5001       ( 55%)</td><td class="badTalent"><b>Master of the Glaive</b></td><td class="badTalent">1506       ( 16%)</td><td class="marginalTalent"><b>Fel Eruption</b></td><td class="marginalTalent">2576       ( 28%)</td></tr>
+<tr><td class="goodTalent"><b>Demonic</b></td><td class="goodTalent">9066       ( 99%)</td><td class="badTalent"><b>Momentum</b></td><td class="badTalent">8          (  0%)</td><td class="marginalTalent"><b>Nemesis</b></td><td class="marginalTalent">9          (  0%)</td></tr>
+</table></center></div>
+<div id="demon_hunter_vengeance">
+<a name="demon_hunter_vengeance"><h3>Demon Hunter: vengeance</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>725 (5%)</td></tr><tr><td>5-9</td><td>1853 (14%)</td></tr><tr><td>10-14</td><td>2624 (20%)</td></tr><tr><td>15-19</td><td>6141 (47%)</td></tr><tr><td>20-24</td><td>1481 (11%)</td></tr><tr><td>25-29</td><td>36 (0%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>4906 (49%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>5094 (50%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters surveyed:</h4><center><table border="1" width="100%"><tr><td class="goodTalent"><b>Abyssal Strike</b></td><td class="goodTalent">4570       ( 93%)</td><td class="badTalent"><b>Agonizing Flames</b></td><td class="badTalent">154        (  3%)</td><td class="marginalTalent"><b>Razor Spikes</b></td><td class="marginalTalent">182        (  3%)</td></tr>
+<tr><td class="marginalTalent"><b>Feast of Souls</b></td><td class="marginalTalent">282        (  5%)</td><td class="goodTalent"><b>Fallout</b></td><td class="goodTalent">4537       ( 92%)</td><td class="badTalent"><b>Burning Alive</b></td><td class="badTalent">87         (  1%)</td></tr>
+<tr><td class="goodTalent"><b>Flame Crash</b></td><td class="goodTalent">4748       ( 96%)</td><td class="badTalent"><b>Charred Flesh</b></td><td class="badTalent">59         (  1%)</td><td class="marginalTalent"><b>Fellblade</b></td><td class="marginalTalent">99         (  2%)</td></tr>
+<tr><td class="badTalent"><b>Soul Rending</b></td><td class="badTalent">90         (  1%)</td><td class="marginalTalent"><b>Feed the Demon</b></td><td class="marginalTalent">290        (  5%)</td><td class="goodTalent"><b>Fracture</b></td><td class="goodTalent">4526       ( 92%)</td></tr>
+<tr><td class="marginalTalent"><b>Concentrated Sigils</b></td><td class="marginalTalent">605        ( 12%)</td><td class="badTalent"><b>Quickened Sigils</b></td><td class="badTalent">337        (  6%)</td><td class="goodTalent"><b>Sigil of Chains</b></td><td class="goodTalent">3964       ( 80%)</td></tr>
+<tr><td class="marginalTalent"><b>Gluttony</b></td><td class="marginalTalent">884        ( 18%)</td><td class="goodTalent"><b>Spirit Bomb</b></td><td class="goodTalent">3923       ( 79%)</td><td class="badTalent"><b>Fel Devastation</b></td><td class="badTalent">99         (  2%)</td></tr>
+<tr><td class="goodTalent"><b>Last Resort</b></td><td class="goodTalent">2761       ( 56%)</td><td class="marginalTalent"><b>Void Reaver</b></td><td class="marginalTalent">1268       ( 25%)</td><td class="badTalent"><b>Soul Barrier</b></td><td class="badTalent">877        ( 17%)</td></tr>
+</table></center></div>
+<div id="druid_balance">
+<a name="druid_balance"><h3>Druid: balance</h3></a><center><table border="0" width="100%"><tr><td style="border:0" width="50%"><center><table><tr><th>M+ Level Range</th><th>Pct</th></tr><tr><td>0-4</td><td>515 (3%)</td></tr><tr><td>5-9</td><td>1332 (7%)</td></tr><tr><td>10-14</td><td>2481 (14%)</td></tr><tr><td>15-19</td><td>9335 (54%)</td></tr><tr><td>20-24</td><td>3158 (18%)</td></tr><tr><td>25-29</td><td>254 (1%)</td></tr><tr><td>30-34</td><td>0 (0%)</td></tr></table></center></td><td style="border: 0" width="50%"><center><table><tr><th colspan="2">Dataset</th></tr><tr><td>Characters</td><td>7331 (73%)</td></tr><tr><td>Unavailable (due to spec switch)</td><td>2669 (26%)</td></tr><tr><td>Leaderboard</td><td>10000</td></tr></table></center></td></tr></table></center><h4>Talent choices for all characters surveyed:</h4><center><table border="1" width="100%"><tr><td class="goodTalent"><b>Nature's Balance</b></td><td class="goodTalent">5712       ( 77%)</td><td class="badTalent"><b>Warrior of Elune</b></td><td class="badTalent">137        (  1%)</td><td class="marginalTalent"><b>Force of Nature</b></td><td class="marginalTalent">1482       ( 20%)</td></tr>
+<tr><td class="badTalent"><b>Tiger Dash</b></td><td class="badTalent">686        (  9%)</td><td class="marginalTalent"><b>Renewal</b></td><td class="marginalTalent">1632       ( 22%)</td><td class="goodTalent"><b>Wild Charge</b></td><td class="goodTalent">5013       ( 68%)</td></tr>
+<tr><td class="badTalent"><b>Feral Affinity</b></td><td class="badTalent">144        (  1%)</td><td class="marginalTalent"><b>Guardian Affinity</b></td><td class="marginalTalent">1404       ( 19%)</td><td class="goodTalent"><b>Restoration Affinity</b></td><td class="goodTalent">5783       ( 78%)</td></tr>
+<tr><td class="badTalent"><b>Mighty Bash</b></td><td class="badTalent">475        (  6%)</td><td class="marginalTalent"><b>Mass Entanglement</b></td><td class="marginalTalent">1669       ( 22%)</td><td class="goodTalent"><b>Typhoon</b></td><td class="goodTalent">5187       ( 70%)</td></tr>
+<tr><td class="badTalent"><b>Soul of the Forest</b></td><td class="badTalent">69         (  0%)</td><td class="goodTalent"><b>Starlord</b></td><td class="goodTalent">4899       ( 66%)</td><td class="marginalTalent"><b>Incarnation: Chosen of Elune</b></td><td class="marginalTalent">2363       ( 32%)</td></tr>
+<tr><td class="badTalent"><b>Stellar Drift</b></td><td class="badTalent">41         (  0%)</td><td class="goodTalent"><b>Twin Moons</b></td><td class="goodTalent">6207       ( 84%)</td><td class="marginalTalent"><b>Stellar Flare</b></td><td class="marginalTalent">1083       ( 14%)</td></tr>
+<tr><td class="goodTalent"><b>Shooting Stars</b></td><td class="goodTalent">5567       ( 75%)</td><td class="marginalTalent"><b>Fury of Elune</b></td><td class="marginalTalent">1725       ( 23%)</td><td class="badTalent"><b>New Moon</b></td><td class="badTalent">39         (  0%)</td></tr>
+</table></center></div>
+        <div id="footer">
         <hr>  
-        TODO... needs refresh.
         <h5>Credits:</h5>  
-        <span class="credits left">RaiderIO <a href="https://raider.io/">Raider IO</a></span>
-        <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-      </div>
+        <ul>
+        <li><a href="https://raider.io/">Raider IO</a></li>
+        <li><a href="http://www.github.com">Hosted on GitHub Pages</a></li>
+        <li><a href="https://thomasf.github.io/solarized-css/">Solarized Dark CSS</a></li>
+        </ul>
+        </div>
   
+<script>switchClass("#death_knight_blood");</script>
 </body>
 </html>
